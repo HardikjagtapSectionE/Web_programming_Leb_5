@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>Music website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    
+    <section id="home">
+        <section class="sub-header">
+            <nav>
+              <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="HideMenu()"></i>
+                <ul>
+                  <li><a href="home">Home</a></li>
+                  <li><a href="">Artist</a></li>
+                  <li><a href="">Albums</a></li>
+                  <li><a href="">Event</a></li>
+                </ul>
+              </div>
+              <i class="fa fa-bars" aria-hidden="true" onclick="ShowMenu()"></i>
+            </nav>
+            <div class="text_box1">
+              <h1>Music site</h1>
+            </div>
+          </section>
+    </section>
+
+    <section class="music">
+      <h1>Welcome to My Music theme Website.</h1>
+      <p>
+        In the most general of terms, music is the arrangement of sound to
+        create some combination of form, harmony, melody, rhythm, or otherwise
+        expressive content.[1][2][3] Definitions of music vary depending on
+        culture,[4] though it is an aspect of all human societies and a cultural
+        universal.[5] While scholars agree that music is defined by a few
+        specific elements, there is no consensus on their precise
+        definitions.[6] The creation of music is commonly divided into musical
+        composition, musical improvisation, and musical performance,[7] though
+        the topic itself extends into academic disciplines, criticism,
+        philosophy, psychology, and therapeutic contexts. Music may be performed
+        or improvised using a vast range of instruments, including the human
+        voice, and thus is often credited for its extreme versatility and
+        opportunity for creativity.[8]
+      </p>
+      <br /><br />
+
+      <h2>Music Instruments</h2>
+      <div class="row">
+        <div class="music-col">
+          <h3>Drums</h3>
+          <br />
+          <div class="images">
+            <img src="drums.webp" alt="" width="90%" height="auto" />
+          </div>
+        </div>
+        <div class="music-col">
+          <h3>Guitar</h3>
+          <br />
+          <div class="images">
+            <img src="guitar.webp" alt="" width="90%" height="320px" />
+          </div>
+        </div>
+        <div class="music-col">
+          <h3>Harp</h3>
+          <br />
+          <div class="images">
+            <img src="harp.webp" alt="" width="90%" height="320px" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="artist">
+      <h1>Artist</h1>
+      <div class="row">
+        <div class="artist-col">
+          <img src="arjit.webp" alt="" height="70%" />
+          <h3>Arjit Singh</h3>
+          <p>
+            Arijit Singh (born 25 April 1987) is an Indian playback singer and
+            music composer.[6][4][2] The recipient of several accolades
+            including a National Film Award and seven Filmfare Awards, he has
+            recorded songs in several Indian languages, predominantly Hindi and
+            Bengali.
+          </p>
+          <audio controls>
+            <source
+              src="_Heeriye(PagalWorld.com.pe).mp3"
+              type="audio/mpeg"
+            />
+          </audio>
+        </div>
+        <div class="artist-col">
+          <img src="alan_walker.jpg" alt="" height="70%" />
+          <h3>Alan Walker</h3>
+          <p>
+            Alan Olav Walker (born 24 August 1997) is a Norwegian DJ and music
+            producer, primarily known for his single "Faded" (2015), which was
+            certified platinum in 14 countries.
+          </p>
+          <br />
+          <audio controls>
+            <source
+              src="The-Drum---Alan-Walker(pagalworld.co.uk).mp3"
+              type="audio/mpeg"
+            />
+          </audio>
+        </div>
+        <div class="artist-col">
+          <img src="Shreya_Ghoshal.jpg" alt="" height="70%" />
+          <h3>Shreya Ghoshal</h3>
+          <p>
+            Shreya Ghoshal (born 12 March 1984) is an Indian singer. Noted for
+            her wide vocal range and versatility, she is one of the most
+            prolific and popular singers of India.[3][4] She has recorded songs
+            for films and albums in various Indian and foreign languages.
+          </p>
+          <audio controls>
+            <source
+              src="Aa Paas Aa Ankahee 128 Kbps.mp3"
+              type="audio/mpeg"
+            />
+          </audio>
+        </div>
+      </div>
+    </section>
+
+    <section class="event">
+      <br />
+      <center>
+        <h1>Upcoming Events</h1>
+        <iframe
+          width="40%"
+          height="400"
+          src="https://www.youtube.com/embed/bmfW4Z3ZINs?si=RCheQA8NJWrHB3qN"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </center>
+    </section>
+    <section class="footer">
+      <div class="icons">
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-facebook-square"></i>
+      </div>
+      <p>
+        Develop By <i class="fa fa-laptop"></i> Hardik Jagtap | &copy;Lab_5 All
+        Rights Reserved
+      </p>
+    </section>
+
+    <script>
+      var navlinks = document.getElementById("navlinks");
+
+      function ShowMenu() {
+        navlinks.style.right = "0";
+      }
+
+      function HideMenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
